@@ -57,7 +57,7 @@ const Contact = ({ show }) => {
       <article className="sm:flex">
         <motion.form
           // ref={form}
-          // onSubmit={sendEmail}
+          onSubmit={"https://adewaletosin.netlify.app/"}
           className="flex flex-col sm:w-1/2"
           variants={variants}
           initial="hidden"
