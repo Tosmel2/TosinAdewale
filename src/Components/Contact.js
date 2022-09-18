@@ -64,9 +64,12 @@ const Contact = ({ show }) => {
           animate="show"
           transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
           method="post" 
-          name="ContactMe Form" 
+          // name="ContactMe Form" 
           data-netlify="true"
+          name="contact"
+          data-netlify-honeypot="bot-field"
         >
+          <input type="hidden" name="form-name" value="contact" />
           <motion.div className="sm:flex " variants={item}>
             <input
               type="text"
