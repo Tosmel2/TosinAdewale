@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+    font-family: 'Calibrel';
+    src: url('./fonts/Calibre/Calibre-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Cali';
+    src: url('./fonts/Calibre/Calibre-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'SFMono';
+    src: url('./fonts/SFMono/SFMono-Semibold.woff2') ;
+}
+
+body{
+    font-family: 'Calibrel' !important;
+    --tw-bg-opacity: 1;
+    background-color: rgb(10 25 47 / var(--tw-bg-opacity));
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    font-family: 'Cali';
+}
+
+.ff{
+    font-family: 'SFMono';
+}
+
+input, textarea{
+    border: none;
+    outline: none;
+}
+
+pdf{
+    height: 900px;
+}
