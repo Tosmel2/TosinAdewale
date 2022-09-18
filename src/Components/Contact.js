@@ -55,7 +55,6 @@ const Contact = ({ show }) => {
       <h1 className="text-name text-xl sm:text-2xl py-3">Contact Me </h1>
       <small>Send Me a Message and I would be notified</small>
       <article className="sm:flex">
-      <form method="post" name="Contact Form" netlify>
         <motion.form
           // ref={form}
           // onSubmit={sendEmail}
@@ -64,9 +63,9 @@ const Contact = ({ show }) => {
           initial="hidden"
           animate="show"
           transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
-          // method="post" 
-          // name="ContactMe Form" 
-          // data-netlify="true"
+          method="post" 
+          name="ContactMe Form" 
+          data-netlify="true"
         >
           <motion.div className="sm:flex " variants={item}>
             <input
@@ -126,7 +125,6 @@ const Contact = ({ show }) => {
             <p>Ogun State, Nigeria.</p>
           </div>
         </motion.section>
-        </form>
       </article>
     </motion.div>
   );
