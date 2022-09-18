@@ -1,31 +1,31 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
+// import React, { useRef } from "react";
+// import emailjs from "@emailjs/browser";
 import { TbPhone, TbMail } from "react-icons/tb";
 import { MdOutlineMyLocation } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const Contact = ({ show }) => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_5lhljv5",
-        "template_fxvouda",
-        form.current,
-        "pU6ckL_4izar_lfxg"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
-    e.target.reset();
-  };
+  //   emailjs
+  //     .sendForm(
+  //       "service_5lhljv5",
+  //       "template_fxvouda",
+  //       form.current,
+  //       "pU6ckL_4izar_lfxg"
+  //     )
+  //     .then(
+  //       (result) => {
+  //         console.log(result.text);
+  //       },
+  //       (error) => {
+  //         console.log(error.text);
+  //       }
+  //     );
+  //   e.target.reset();
+  // };
 
   const variants = {
     hidden: { opacity: 0 },
@@ -55,17 +55,18 @@ const Contact = ({ show }) => {
       <h1 className="text-name text-xl sm:text-2xl py-3">Contact Me </h1>
       <small>Send Me a Message and I would be notified</small>
       <article className="sm:flex">
+      <form method="post" name="Contact Form" netlify>
         <motion.form
-          ref={form}
-          onSubmit={sendEmail}
+          // ref={form}
+          // onSubmit={sendEmail}
           className="flex flex-col sm:w-1/2"
           variants={variants}
           initial="hidden"
           animate="show"
           transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
-          method="post" 
-          name="Contact Form" 
-          data-netlify="true"
+          // method="post" 
+          // name="ContactMe Form" 
+          // data-netlify="true"
         >
           <motion.div className="sm:flex " variants={item}>
             <input
@@ -125,6 +126,7 @@ const Contact = ({ show }) => {
             <p>Ogun State, Nigeria.</p>
           </div>
         </motion.section>
+        </form>
       </article>
     </motion.div>
   );
