@@ -266,7 +266,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">05.</span>Toggle Light/Dark Mode Admin ashboard{" "}
+            <span className="text-[#FF5823]">05.</span>Toggle Light/Dark Mode Admin Dashboard{" "}
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
             <motion.article
