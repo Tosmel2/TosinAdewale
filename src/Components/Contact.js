@@ -61,7 +61,7 @@ const Contact = ({ show }) => {
               name="name"
               placeholder="Name"
               className="my-2 py-2 bg-[#233554] w-full sm:w-1/2 placeholder:pl-2 placeholder:text-sub sm:mr-2"
-              {...register("name", { required: true, maxLength: 10 })}
+              {...register("name", { required: true, maxLength: 20 })}
             />
             {errors.name && <small style={{color:'red'}}>Please check the Name</small>}
             <input
@@ -94,7 +94,7 @@ const Contact = ({ show }) => {
           {errors.message && <small style={{color:'red'}}>Please enter message</small>}
           <motion.button
             type="submit"
-            className="border-[#64ffda] px-3 py-2 my-2 items-start border rounded-sm hover:bg-[#233554] text-xl font-thin"
+            className="border-[#FF5823] px-3 py-2 my-2 items-start border rounded-sm hover:bg-[#233554] text-xl font-thin"
             variants={item}
           >
             Send
