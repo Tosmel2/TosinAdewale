@@ -45,7 +45,7 @@ const Contact = ({ show }) => {
           data-netlify="true"
           name="Contact"
           data-netlify-honeypot="bot-field"
-          action="/"
+          // action="/"
         >
           <input type="hidden" name="form-name" value="Contact" />
           <motion.div className="sm:flex " variants={item}>

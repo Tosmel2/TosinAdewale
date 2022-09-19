@@ -1,5 +1,4 @@
 import React from "react";
-// import res from "./res.pdf";
 import res from "../Images/res.pdf";
 
 const Resume = () => {
