@@ -57,17 +57,17 @@ const Contact = ({ show }) => {
       <article className="sm:flex">
         <motion.form
           // ref={form}
-          onSubmit={"/"}
+          // onSubmit={""}
           className="flex flex-col sm:w-1/2"
           variants={variants}
           initial="hidden"
           animate="show"
           transition={{ duration: 0.3, delay: 0.05, staggerChildren: 0.2 }}
           method="post" 
-          // name="ContactMe Form" 
           data-netlify="true"
           name="Contact"
           data-netlify-honeypot="bot-field"
+          action="/"
         >
           <input type="hidden" name="form-name" value="Contact" />
           <motion.div className="sm:flex " variants={item}>
