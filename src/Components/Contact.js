@@ -1,31 +1,9 @@
 // import React, { useRef } from "react";
-// import emailjs from "@emailjs/browser";
 import { TbPhone, TbMail } from "react-icons/tb";
 import { MdOutlineMyLocation } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const Contact = ({ show }) => {
-  // const form = useRef();
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-
-  //   emailjs
-  //     .sendForm(
-  //       "service_5lhljv5",
-  //       "template_fxvouda",
-  //       form.current,
-  //       "pU6ckL_4izar_lfxg"
-  //     )
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  //   e.target.reset();
-  // };
 
   const variants = {
     hidden: { opacity: 0 },
