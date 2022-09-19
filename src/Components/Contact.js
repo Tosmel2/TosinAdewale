@@ -7,8 +7,8 @@ import { motion } from "framer-motion";
 const Contact = ({ show }) => {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = () => {
-    // console.log(data);
+  const onSubmit = (data) => {
+    console.log(data);
   }
 
   const variants = {
