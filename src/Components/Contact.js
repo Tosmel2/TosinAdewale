@@ -1,9 +1,15 @@
 // import React, { useRef } from "react";
+import { useForm } from "react-hook-form";
 import { TbPhone, TbMail } from "react-icons/tb";
 import { MdOutlineMyLocation } from "react-icons/md";
 import { motion } from "framer-motion";
 
 const Contact = ({ show }) => {
+
+  const { register, handleSubmit, formState: { errors } } = useForm();
+  const onSubmit = (data) => {
+    // console.log(data);
+  }
 
   const variants = {
     hidden: { opacity: 0 },
@@ -45,6 +51,7 @@ const Contact = ({ show }) => {
           data-netlify="true"
           name="Contact"
           data-netlify-honeypot="bot-field"
+          onSubmit={handleSubmit(onSubmit)}
           // action="/"
         >
           <input type="hidden" name="form-name" value="Contact" />
@@ -54,13 +61,21 @@ const Contact = ({ show }) => {
               name="name"
               placeholder="Name"
               className="my-2 py-2 bg-[#233554] w-full sm:w-1/2 placeholder:pl-2 placeholder:text-sub sm:mr-2"
+              {...register("name", { required: true, maxLength: 10 })}
             />
+            {errors.name && <small style={{color:'red'}}>Please check the Name</small>}
             <input
               type="text"
               name="email"
               placeholder="Email"
               className="my-2 py-2 bg-[#233554] w-full sm:w-1/2 placeholder:pl-2 placeholder:text-sub "
+              {...register("email",
+                { 
+                    required: true,  
+                    pattern: /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ 
+                })}
             />
+            {errors.email && <small style={{color:'red'}}>Please check the Email</small>}
           </motion.div>
           <motion.input
             type="text"
@@ -74,7 +89,9 @@ const Contact = ({ show }) => {
             name="message"
             className="my-2 bg-[#233554] w-full placeholder:pl-2 placeholder:text-sub h-7 min-h-full resize-none"
             variants={item}
+            {...register("message", { required: true})}
           ></motion.textarea>
+          {errors.message && <small style={{color:'red'}}>Please enter message</small>}
           <motion.button
             type="submit"
             className="border-[#64ffda] px-3 py-2 my-2 items-start border rounded-sm hover:bg-[#233554] text-xl font-thin"
