@@ -1,6 +1,0 @@
-# In a _redirects file, each redirect rule must be listed on a separate line, with the original path followed by the new path or URL.
-
-/about https://adewaletosin.netlify.app/about
-/experience https://adewaletosin.netlify.app/experience
-/contact https://adewaletosin.netlify.app/contact
-/projects https://adewaletosin.netlify.app/projects
