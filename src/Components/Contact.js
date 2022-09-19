@@ -8,7 +8,7 @@ const Contact = ({ show }) => {
 
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = (data) => {
-    console.log(data);
+    // console.log(data);
   }
 
   const variants = {
@@ -89,9 +89,9 @@ const Contact = ({ show }) => {
             name="message"
             className="my-2 bg-[#233554] w-full placeholder:pl-2 placeholder:text-sub h-7 min-h-full resize-none"
             variants={item}
-            {...register("message", { required: true, maxLength: 100 })}
+            // {...register("message", { required: true, maxLength: 100 })}
           ></motion.textarea>
-          {errors.message && <small style={{color:'red'}}>Please enter message</small>}
+          {/* {errors.message && <small style={{color:'red'}}>Please enter message</small>} */}
           <motion.button
             type="submit"
             className="border-[#FF5823] px-3 py-2 my-2 items-start border rounded-sm hover:bg-[#233554] text-xl font-thin"
