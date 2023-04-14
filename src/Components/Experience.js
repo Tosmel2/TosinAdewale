@@ -249,7 +249,7 @@ const Experience = ({ show }) => {
             >
               <div>
                 <h2 className="text-sub ">
-                  Searching For a Frontend Developer Role{" "}
+                  Searching For a Frontend/Backend Developer Role{" "}
                 </h2>
                 <h3>Hire Me 🙂</h3>
                 <div className="flex items-center">

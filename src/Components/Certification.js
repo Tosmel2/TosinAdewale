@@ -2,7 +2,7 @@ import React from "react";
 import ALX_SE from "../Images/ALX_SE.png";
 import AYA_CERT from "../Images/AYA_CERT.png";
 import udacity from "../Images/udacity.png";
-import evtol from "../Images/evtol.png";
+import scrum from "../Images/scrum.png";
 import { BsLink45Deg } from "react-icons/bs";
 import { motion } from "framer-motion";
 
@@ -137,7 +137,7 @@ const Certification = ({ show }) => {
                 x: 0,
               }}
               transition={{ duration: 1 }}
-              src={evtol}
+              src={scrum}
               alt="evTOL application"
               className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
             />
@@ -153,7 +153,7 @@ const Certification = ({ show }) => {
               SCRUM Fundamental Certificate.
               <div className="flex text-3xl">
                 <a
-                  href="https://adnegs-evtol.netlify.app/"
+                  href="https://drive.google.com/file/d/17UOv-JI97q6N7yN06qXWp8zV8m7-TImi/view?usp=drivesdk"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
