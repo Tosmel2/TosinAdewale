@@ -18,7 +18,7 @@ const About = ({ show }) => {
             y: 0,
           }}
           transition={{ duration: 0.5 }}
-          className="sm:w-1/2 text-justify text-name sm:p-5 sm:pl-10 sm:text-xl "
+          className="sm:w-1/2 text-name sm:p-5 sm:pl-10 sm:text-xl "
         >
           I'm a Motivated FullStack Developer with proficiency in React JS, ExpressJS, MongoDB & NodeJS (MERN STACK). I have a strong interest 
           in designing and building fully responsive web applications as well as developing 
