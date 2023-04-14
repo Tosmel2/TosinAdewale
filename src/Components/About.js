@@ -20,7 +20,7 @@ const About = ({ show }) => {
           transition={{ duration: 0.5 }}
           className="sm:w-1/2 text-justify text-name sm:p-5 sm:pl-10 sm:text-xl "
         >
-          I'm a Motivated Frontend Developer with proficiency in React JS. I have a strong interest 
+          I'm a Motivated FullStack Developer with proficiency in React JS, ExpressJS, MongoDB & NodeJS (MERN STACK). I have a strong interest 
           in designing and building fully responsive web applications as well as developing 
           and changing websites from the layout to the functionality.
           <section className=" mt-2 sm:text-l text-[#FF5823] text-center">
