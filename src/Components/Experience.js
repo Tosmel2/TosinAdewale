@@ -125,6 +125,20 @@ const Experience = ({ show }) => {
               className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
             >
               <div>
+                <h2 className="text-sub ">Backend Bootcamp Training(JS) </h2>
+                <h3>AYA WEB3 Fellowship</h3>
+                <div className="flex items-center">
+                  <GoCalendar />
+                  <p>Oct. 2022 — April. 2023</p>
+                </div>
+              </div>
+            </motion.article>
+
+            <motion.article
+              variants={items}
+              className="pl-3 border-l-2 border-[#aa8b2d1] mb-3 font-thin"
+            >
+              <div>
                 <h2 className="text-sub ">Backend Full Stack Nanodegree </h2>
                 <h3>ALX-T UDACITY</h3>
                 <div className="flex items-center">
