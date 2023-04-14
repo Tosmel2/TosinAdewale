@@ -62,7 +62,7 @@ const Home = ({ show }) => {
         transition={{ duration: 0.5 }}
         className="text-sub text-3xl font-bold pb-3 lg:text-5xl"
       >
-        I am an Enthuastic Developer.
+        I am an Enthuastic Software Engineer.
       </motion.h2>
       <motion.p
         initial={{ opacity: 0, x: -50 }}
@@ -73,7 +73,7 @@ const Home = ({ show }) => {
         transition={{ duration: 0.5 }}
         className="py-3 md:w-2/3 text-sub ff"
       >
-        I design beautiful, responsive websites. Every day, I strive to become a better developer.
+        I design and develop beautiful, functioning and responsive websites. Every day, I strive to become a better developer.
       </motion.p>
       <Link to="/contact">
         <motion.button className="border-[#FF5823] px-8 py-3 my-3 border rounded-sm hover:bg-[#233554] text-xl font-thin ff">
