@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Project from "./Components/Project";
 import Contact from "./Components/Contact";
+import Certification from "./Components/Certification";
 import Loading from "./Components/Loading";
 import Home from "./Components/Home";
 import Resume from "./Components/Resume";
@@ -28,6 +29,7 @@ function App({ show, setShow }) {
               <Route path="/about" element={<About show={show} />} />
               <Route path="/experience" element={<Experience show={show} />} />
               <Route path="/contact" element={<Contact show={show} />} />
+              <Route path="/certificates" element={<Certification show={show} />} />
               <Route path="/projects" element={<Project show={show} />} />
               <Route path="/resume" element={<Resume />} />
             </Route>

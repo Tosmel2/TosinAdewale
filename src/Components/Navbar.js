@@ -96,6 +96,17 @@ const Navbar = () => {
           <motion.div variants={item}>
             {" "}
             <Link
+              to="/certificates"
+              className="hover:text-[#FF5823] focus:text-[FF5823]"
+            >
+              Certification
+            </Link>
+          </motion.div>
+
+
+          <motion.div variants={item}>
+            {" "}
+            <Link
               to="/contact"
               className="hover:text-[#FF5823] focus:text-[FF5823]"
             >
