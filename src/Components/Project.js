@@ -1,6 +1,7 @@
 import React from "react";
 import adnegsfood from "../Images/adnegsfood.png";
 import web3lms from "../Images/web3lms.png";
+import evtol from "../Images/evtol.png";
 import sushi from "../Images/sushi.png";
 import food2 from "../Images/food2.png";
 import dashboardpic from "../Images/dashboardpic.png";
@@ -64,7 +65,56 @@ const Project = ({ show }) => {
           </div>
         </section>
       </div>
-
+      
+      <div>
+        <section className="pb-5">
+          <h2 className="text-name sm:text-xl py-3">
+            <span className="text-[#FF5823]">01.</span> evTOL Management System
+            Application
+          </h2>
+          <div className="flex justify-center items-center flex-col sm:flex-row ">
+            <motion.article
+              initial={{ opacity: 0.5, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              className="sm:w-1/2 bg-[#233554] p-4 "
+            >
+              This is a FullStack platform for evtol management built with ReactJS, Express JS and MongoDB. evtol is an electrical vertical takeoff an landing vehicle used as a means of transporting medications to areas with difficult access.
+              I created this application while undergoing Backend development bootcamp training at AYA Fellowship.
+              <div className="flex text-3xl">
+                <a
+                  href="https://adnegs-evtol.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsLink45Deg className="mr-2" />
+                </a>
+                <a
+                  href="https://github.com/Tosmel2/evTOL_app-Backend"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
+              </div>
+            </motion.article>
+            <motion.img
+              initial={{ opacity: 0.5, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              src={evtol}
+              alt="evTOL application"
+              className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
+            />
+          </div>
+        </section>
+      </div>
 
       <div>
         <section className="pb-5">
