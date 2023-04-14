@@ -70,10 +70,21 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">01.</span> evTOL Management System
+            <span className="text-[#FF5823]">02.</span> evTOL Management System
             Application
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
+          <motion.img
+              initial={{ opacity: 0.5, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              src={evtol}
+              alt="evTOL application"
+              className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
+            />
             <motion.article
               initial={{ opacity: 0.5, x: 100 }}
               whileInView={{
@@ -102,17 +113,7 @@ const Project = ({ show }) => {
                 </a>
               </div>
             </motion.article>
-            <motion.img
-              initial={{ opacity: 0.5, x: -100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              transition={{ duration: 1 }}
-              src={evtol}
-              alt="evTOL application"
-              className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
-            />
+            
           </div>
         </section>
       </div>
@@ -120,7 +121,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">01.</span> Adnegs Food
+            <span className="text-[#FF5823]">03.</span> Adnegs Food
             Application
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
@@ -170,10 +171,21 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">01.</span> A simple TODO
+            <span className="text-[#FF5823]">04.</span> A simple TODO
             Application
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
+          <motion.img
+              initial={{ opacity: 0.5, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              src={todo}
+              alt="todo application"
+              className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
+            />
             <motion.article
               initial={{ opacity: 0.5, x: 100 }}
               whileInView={{
@@ -202,17 +214,7 @@ const Project = ({ show }) => {
                 </a>
               </div>
             </motion.article>
-            <motion.img
-              initial={{ opacity: 0.5, x: -100 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-              }}
-              transition={{ duration: 1 }}
-              src={todo}
-              alt="todo application"
-              className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
-            />
+           
           </div>
         </section>
       </div>
@@ -220,7 +222,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">02.</span>Sushi Food
+            <span className="text-[#FF5823]">05.</span>Sushi Food
             Application
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row-reverse ">
@@ -270,7 +272,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">03.</span>Portfolio Application
+            <span className="text-[#FF5823]">06.</span>Portfolio Application
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
             <motion.article
@@ -320,7 +322,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">04.</span>adnegsfood Food
+            <span className="text-[#FF5823]">07.</span>adnegsfood Food
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row-reverse ">
             <motion.article
@@ -369,7 +371,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">04.</span> Portfolio
+            <span className="text-[#FF5823]">08.</span> Portfolio
             Application
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
@@ -418,7 +420,7 @@ const Project = ({ show }) => {
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
-            <span className="text-[#FF5823]">05.</span>Toggle Light/Dark Mode Admin Dashboard{" "}
+            <span className="text-[#FF5823]">09.</span>Toggle Light/Dark Mode Admin Dashboard{" "}
           </h2>
           <div className="flex justify-center items-center flex-col sm:flex-row ">
             <motion.article
