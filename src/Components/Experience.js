@@ -88,13 +88,25 @@ const Experience = ({ show }) => {
               variants={item}
               className="bg-[#233554] px-5 py-3 m-2 hover:text-[#FF5823]  hover:px-6"
             >
-              Bootstrap / Tailwind CSS
+              Bootstrap / Tailwind CSS / ChakraUI
             </motion.p>
             <motion.p
               variants={item}
               className="bg-[#233554] px-5 py-3 m-2 hover:text-[#FF5823]  hover:px-6"
             >
               Python
+            </motion.p>
+            <motion.p
+              variants={item}
+              className="bg-[#233554] px-5 py-3 m-2 hover:text-[#FF5823]  hover:px-6"
+            >
+              NodeJS / ExpressJS
+            </motion.p>
+            <motion.p
+              variants={item}
+              className="bg-[#233554] px-5 py-3 m-2 hover:text-[#FF5823]  hover:px-6"
+            >
+              MongoDB
             </motion.p>
             <motion.p
               variants={item}
