@@ -1,5 +1,6 @@
 import React from "react";
 import adnegsfood from "../Images/adnegsfood.png";
+import web3lms from "../Images/web3lms.png";
 import sushi from "../Images/sushi.png";
 import food2 from "../Images/food2.png";
 import dashboardpic from "../Images/dashboardpic.png";
@@ -15,6 +16,56 @@ const Project = ({ show }) => {
       className={`${show && "blur-sm"}  pt-2 px-2 sm:px-5 md:px-20 lg:pl-24 ff`}
     >
       <h1 className="text-name text-xl sm:text-2xl py-3 text-[#FF5823]">Projects</h1>
+      <div>
+        <section className="pb-5">
+          <h2 className="text-name sm:text-xl py-3">
+            <span className="text-[#FF5823]">01.</span> WEB3 LMS
+            Application
+          </h2>
+          <div className="flex justify-center items-center flex-col sm:flex-row ">
+            <motion.article
+              initial={{ opacity: 0.5, x: 100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              className="sm:w-1/2 bg-[#233554] p-4 "
+            >
+              This FullStack web3 LMS application was created with react JS, ExpressJS, MongoDB styled with Tailwind CSS and ChakraUI. I created this application while undergoing Backend development bootcamp training at AYA Fellowship.
+              <div className="flex text-3xl">
+                <a
+                  href="https://ayapod5-lms.vercel.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <BsLink45Deg className="mr-2" />
+                </a>
+                <a
+                  href="https://github.com/Tosmel2/WEB3-LMS"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AiFillGithub />
+                </a>
+              </div>
+            </motion.article>
+            <motion.img
+              initial={{ opacity: 0.5, x: -100 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+              }}
+              transition={{ duration: 1 }}
+              src={web3lms}
+              alt="WEB3 LMS application"
+              className="sm:w-1/2 rounded-b-lg sm:rounded-lg"
+            />
+          </div>
+        </section>
+      </div>
+
+
       <div>
         <section className="pb-5">
           <h2 className="text-name sm:text-xl py-3">
