@@ -118,7 +118,7 @@ const Contact = ({ show }) => {
           </div>
           <div className="flex items-center my-3">
             <MdOutlineMyLocation />
-            <p>Ogun State, Nigeria.</p>
+            <p>Oyo State, Nigeria.</p>
           </div>
         </motion.section>
       </article>
